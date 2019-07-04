@@ -6,7 +6,7 @@ S3 Standard ------
 - Retrieval fee: N/A
 - First byte latency: milliseconds (time taken to access data)
 
-S3 IA ------ (formerly RRS Reduced Redundancy Store)
+S3 IA ------
 (Infrequently accessed)
 For data that is accessed less frequently, but requires rapid access when needed. lower fee than S3, but you will be charged a retrieval fee
 - Minimum capacity charge per object: N/A
@@ -14,7 +14,7 @@ For data that is accessed less frequently, but requires rapid access when needed
 - Retrieval fee: N/A
 - First byte latency: milliseconds
 
-S3 One Zone-IA ------
+S3 One Zone-IA ------ (formerly RRS Reduced Redundancy Store)
 For where you want a lower cost option for infrequently accessed data, but do not require the multiple availability zone data resilience
 - Minimum capacity charge per object: 128KB
 - Minimum storage duration charge: 30days
