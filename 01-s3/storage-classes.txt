@@ -1,0 +1,43 @@
+S3 Standard ------
+99.99% Availability
+99.999999999% Durability, Stored redundantly across multiple devices across multiple facilities and is designed to sustain the loss of 2 facilities concurrently
+- Minimum capacity charge per object: N/A
+- Minimum storage duration charge: N/A
+- Retrieval fee: N/A
+- First byte latency: milliseconds (time taken to access data)
+
+S3 IA ------
+(Infrequently accessed)
+For data that is accessed less frequently, but requires rapid access when needed. lower fee than S3, but you will be charged a retrieval fee
+- Minimum capacity charge per object: N/A
+- Minimum storage duration charge: 30days
+- Retrieval fee: N/A
+- First byte latency: milliseconds
+
+S3 One Zone-IA ------
+For where you want a lower cost option for infrequently accessed data, but do not require the multiple availability zone data resilience
+- Minimum capacity charge per object: 128KB
+- Minimum storage duration charge: 30days
+- Retrieval fee: per GB retrieved
+- First byte latency: milliseconds
+
+S3 - Intelligent Tiering ------
+Designed to optimize cost by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead
+- Minimum capacity charge per object: 128KB
+- Minimum storage duration charge: 30days
+- Retrieval fee: per GB retrieved
+- First byte latency: milliseconds
+
+S3 Glacier ------
+S3 glacier is a secure, durable and low-cost storage class for data archiving. you can reliably store any amount of data at costs that are competitive with or cheaper than on-premises solutions. Retrieval times configurable from minutes to hours.
+- Minimum capacity charge per object: 40KB
+- Minimum storage duration charge: 90days
+- Retrieval fee: per GB retrieved
+- First byte latency: select minutes or hours
+
+S3 Glacier Deep Archive ------
+S3 GDA is Amazon's lowest-cost storage class where a retrieval time of 12 hours is acceptable
+- Minimum capacity charge per object: 40KB
+- Minimum storage duration charge: 180days
+- Retrieval fee: per GB retrieved
+- First byte latency: select hours
