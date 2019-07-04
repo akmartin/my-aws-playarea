@@ -1,0 +1,7 @@
+You are charged for S3 in the following ways:
+- Storage
+- Requests
+- Storage Management Pricing
+- Data Transfer Pricing
+- Transfer Acceleration
+- Cross Region Replication Pricing
