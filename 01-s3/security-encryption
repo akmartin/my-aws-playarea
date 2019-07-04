@@ -1,0 +1,15 @@
+By default all newly created buckets are PRIVATE. Yow can set up access control to your buckets useing;
+- Bucket Policies
+- Access Control Lists
+
+S3 buckets can be configured to create access logs which log all requests made to the S3 bucket.
+This can be sent to another bucket and even another bucket in another account.
+
+Encryption in Transit is achieved by
+- SSL/TLS
+Encryption at rest is achieved by 
+on the server side:
+- S3 managed keys - SSE-S3
+- AWS Key management service, Managed keys - SSE-KMS
+- Server side encryption with Customer provided Keys - SSE-C
+on the client side the file is encrypted and uploaded:
