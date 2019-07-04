@@ -6,7 +6,7 @@ S3 Standard ------
 - Retrieval fee: N/A
 - First byte latency: milliseconds (time taken to access data)
 
-S3 IA ------
+S3 IA ------ (formerly RRS Reduced Redundancy Store)
 (Infrequently accessed)
 For data that is accessed less frequently, but requires rapid access when needed. lower fee than S3, but you will be charged a retrieval fee
 - Minimum capacity charge per object: N/A
