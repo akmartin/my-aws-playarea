@@ -1,0 +1,26 @@
+S3 - Simple Storage Service
+
+- It is a safe place to store your files
+- It is object-based storage
+- The data is divided across multiple devices and facilities
+
+Basics of S3:
+- It is object based - ie it allows you to upload files
+- Files can be from 0bytes to 5TB
+- There is unlimited storage
+- Files are stored in Buckets (folders)
+- S3 is a universal namespace. That is names must be unique globally
+- http://s3-eu-west-1.amazonaws.com/bucketname
+- When you upload a file to S3 - you will receive a http 200 code if the upload was successful
+
+S3 objects consist of the following:
+- Key (This is simply the name of the object)
+- Value (This is simply the data that is made up of the sequence of bytes)
+- Version ID (important for versioning)
+- Metadata (Data about data you are storing)
+
+Data consistency in S3:
+- Read after Write consistency for PUTS of new objects
+  (If you write a new file and read it immediately afterwards, you will be able to view that data)
+- Eventual consistency for overwrite PUTS and DELETES(might take a while to propogate)
+  (If you update an existing file or delete a file and read it immediately, you may get the older version or you may not. Changes to objects takes a little bit of time to propogate)
