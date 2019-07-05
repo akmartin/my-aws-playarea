@@ -1,0 +1,32 @@
+EC2: Virtual Machines in the cloud
+
+Pricing:
+On demand - Allows you to pay a fixed rate by the hour or second without any commitment
+
+Reserved - Provides you with a capacity reservation, and offer a significant discount on hourly charge for an instance. Contract terms are 1year to 3year terms .
+
+Spot - Enables you to bid whatever price you want for instance capacity, providing for even greater savings if you applications have flexible start and end times
+If the spot instance is terminated by EC2, you will not be charged for a partial hour of usage. However if you terminate the instance yourself, you will be charged for any hour that the instance ran.  
+
+Dedicated Hosts - Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce costs by allowing you to use you existing server-bond software licenses
+
+EC2 Instance types:
+FIGHT DR MC PXZ AU
+F - FPGA
+I - IOPS
+G - Graphics
+H - High Disk Throughput
+T - Cheap general purposes (T2 micro)
+
+D - Density
+R - RAM
+
+M - Main choice for general purpose apps
+C - Compute
+
+P - Graphics (pics)
+X - Extreme memory
+Z - Extreme memory & CPU
+
+A - ARM based work loads 
+U - Bare Metal
