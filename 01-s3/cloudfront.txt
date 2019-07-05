@@ -1,0 +1,17 @@
+CloudFront: A Content Delivery network (CDN) is a system of distributed servers (network) that deliver webpages and their web content to a user based on geographic locations of the user, the origin of the webpage, and a content delivery server.
+
+EDGE LOCATION: This is the location where content will be cached. This is seperate to an AWS Region/Availability Zone.
+- Edge Locations are not just READ ONLY - you can WRITE to them too.
+- Objects are cached for the TTL (Time To Live - in secs)
+- You can clear cached objects, but you will be charged ***
+
+ORIGIN: This is the origin of all the files that the CDN will distribute. This can be a S3 bucket, an EC2 instance, an Elastic Load Balancer or Route 53.
+
+DISTRIBUTION: This is the name given to the CDN which consists of a collection of Edge Locations.
+There are 2 types of distributions in CloudFront:
+- Web distribution - Typically used for websites
+- RTMP - Used for media streaming
+
+Amazon CloudFront can be used to deliver your entire website, including dynamic, static, streaming and interactive content using a global network of edge locations. Requests for your content are automatically routed to the nearest edge location, so content is delivered with the best possible performance
+
+
