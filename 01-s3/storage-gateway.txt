@@ -1,0 +1,20 @@
+AWS storage gateway is a service that connects an on-premises software appliance with cloud-based storage to provide seamless and secure integration between an organization's on-premises IT environment and AWS's storage infrastructure. The service enables you to securely store data to the AWS cloud for scalable and cost effective storage.
+
+AWS storage gateway's software applicance is available to download as a virtual machine (VM) image that you install on a host in your data center. Storage Gateway supports either VMWare ESXi or Microsoft Hyper-V. Once you have installed your gateway and associated it with your AWS account throgh the activation process, you can use the AWS Management Console to create the storage gateway option that is right for you.
+
+Storage Gateway comes in 3 flavors:
+- File gateway (NFS)
+- Volume gateway (iSCSI)
+  - Stored Volumes
+  - Cached Volumes
+- Tape gateway (VTL) Virtual Tape Library
+
+File Gateway: Files are stored as objects in your S3 buckets, accessed through a network file system(NFS) mount point. Ownership, permissions and timestamps are durably stored in S3 in the user-metadata of the object associated with the file. Once objects are transferred to S3 they can be managed as native S3 objects, and bucket policies such as versioning, lifecycle management, and cross-region replication apply directly to objects stored in your bucket.
+
+Volume Gateway: The volume interface presents your applications with disk volumes using the iSCSI block protocol.
+Data written in these volumes can be asynchronously backed up as point-in-time snapshots of your volumes, and stored in the cloud as Amazon EBS snapshots.
+Snapshots are incremental backups that capture only changed blocks. All snapshot storage is also compressed to minimize your storage charges.
+Stored Volumes let you stpre your primary data locally while asynchronously backing up that data to AWS.Stored volumes provide your on-premises applications with low-latency access to their entire datasets, while providing durable off-site backups. You can create storage volumes and store them as iSCSI devices from your on-premises application servers. Data written to your stored volumes is stored on your on-premises storage hardware. This data is asynchronously backed up to Amazon Elastic Block Store (Amazon EBS) snapshots. 1GB-16TB in size for Stored Volumes.
+Cached Volumes let you use Amazon S3 as your primary data storage while retaining frequently accessed data locally in your storage gateway. Cached volumes minimize the need to scale your on-premises storage infrastructure, while still providing your applications with low-latency access to their frequently accessed data. You can create storage volumes upto 32TB in size and attach them to iSCSI devices from your on-premises application servers. Your gateway stores the data you write to these volumes in Amazon S3 and retains recently read data in your on-premises storage gateway's cache and upload buffer storage. 1GB-32TB in size of cached volumes.
+
+
