@@ -10,7 +10,9 @@ Life Cycle Management (LCM)
 - Can be used in conjunction with versioning
 
 Cross Region Replication
+- To add replication for an S3 bucket, versioning has to be enabled on both the source and destination buckets
 - once cross region replication is set any existing files in the bucket are not replicated.
 - Any new file added to the bucket after replication is set is automatically replicated across regions.
 - if a file is marked for deletion in the bucket the 'marked for deletion' is not replicated.
 - Older files existing in the bucket before setting replication on it will have to be manually copied to the replication buckets.
+- Deletion of individual versions of files are also NOT replicated
