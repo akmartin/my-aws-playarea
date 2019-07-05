@@ -1,4 +1,4 @@
-CloudFront: A Content Delivery network (CDN) is a system of distributed servers (network) that deliver webpages and their web content to a user based on geographic locations of the user, the origin of the webpage, and a content delivery server.
+CloudFront: A Content Delivery Network (CDN) is a system of distributed servers (network) that deliver webpages and their web content to a user based on geographic locations of the user, the origin of the webpage, and a content delivery server.
 
 EDGE LOCATION: This is the location where content will be cached. This is seperate to an AWS Region/Availability Zone.
 - Edge Locations are not just READ ONLY - you can WRITE to them too.
