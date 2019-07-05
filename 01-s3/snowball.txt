@@ -1,0 +1,13 @@
+Snowball: is a a petabbyte-scale data transport solution that uses secure appliances to transfer large amounts of data into and out of AWS. Using snowball addresses challenges with large scale data transfers including high network costs, long transfer times and, security concerns. Transfering data with Snowball is simple, fast, secure and can be as little as one-fifth the cost of high speed internet.
+
+Snowball come in either 50TB or 80TB size. Snowball uses multiple layers of security designed to protect your data including tamper-resistant enclosures, 256-bit encryption, and an industry standard Trusted Platform Mode(TPM) designed to ensure both full security and full chain of custody of your data. Once the data transfer job has been processed and verified, AWS performs a erasure of the snowball appliance.
+
+AWS Snowball Edge: is a 100TB data transfer service with on-board storage and data compute capabilities (like Lambda functions). You cna use Snowball Edge to transfer large amounts of data into and out of AWS, as a temporary storage tier for large databases, or to support local workloads in remote or offline locations. (Aircrafts use Snowball Edge to gather test data and to run lambda funstions on them)
+Snowball Edge connects to your existing applications and infrastructure using standard storage interfaces, streamlining the data transfer process and minimizing setup and integration. Snowball Edge can cluster together to form a local storage tier and process your data on-premises, helping ensure your applications continue to run even when they are not able to access the cloud.
+
+AWS Snowmobile: is an Exabyte-scale data transfer service used to move extremely large amounts of data to AWS. you cna transfer upto 100PB of data per snowmobile. A ruggedized shipping container, pulled by a semi-trailer truck. Snowmobile makes it easy to move massive volumes of data to the cloud, including video libraries, image repositories, or even a complete data centermigration. It is secure, fast and cost effective.
+
+Available Network Conn:          Min number of days to transfer 100TB @ 80% utilization:          When to consider AWS Snowball I/Export:
+T3 (44.736Mbps)                  269 days                                                         2TB or more
+100Mbps                          120 days                                                         5TB or more
+1000Mbps                         12 days                                                          60TB or more
