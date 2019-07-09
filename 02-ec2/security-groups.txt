@@ -1,0 +1,9 @@
+- All inbound traffic is blocked by default
+- All outbound traffic is allowed
+- Changes to security groups take effect immediately 
+- You can have multiple EC2 instances attached to a security group
+- Security groups are STATEFUL 
+- If you create an inbound rule allowing traffic in, that traffic is automatically allowed back out again
+- You cannot block specific IPs using security Groups instead you use Network Access Control Lists
+- you can specify allow rules, but not deny rules
+
