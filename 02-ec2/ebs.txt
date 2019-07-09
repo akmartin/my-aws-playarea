@@ -1,0 +1,41 @@
+EBS: Elastic Block Storage (virtual harddisk in the cloud)
+
+5 differsnt flavours:
+- General porpose (SSD)
+  API Name: gp2
+  MAX IOPS/Vol: 16000
+  Use Cases: Most work loads
+  
+- Provisioned IOPS (SSD)
+  API Name: io1
+  MAX IOPS/Vol: 64000
+  Use Cases: Databases
+  
+- Throughput optimized Hard Disk Drive (Data warehousing)
+  API Name: st1
+  MAX IOPS/Vol: 500
+  Use Cases: Big Data & Data Warehousing
+  
+- Cold Hard Disk Drive (Magnetic)
+  API Name: sc1
+  MAX IOPS/Vol: 250
+  Use Cases: File servers
+  
+- Magnetic
+  API Name: Standard
+  MAX IOPS/Vol: 40-200
+  Use Cases: Work loads were data is infrequently accessed
+
+
+- Volumes exist on EBS. Think of EBS as Virtual Hard Disk
+- Snapshots exist on S3. Think of snapshots as photograph of the disk
+- Snapshots are point in time copies of Volumes
+- Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3
+- Your first snapshot may take sometime to create
+- To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot
+- However you can take a snapshot while the instance is running
+- You can create AMIs from both snapshots and volumes
+- You can change EBS volume sizes on the fly, including changing the size and storage type
+- Volumes will always be in the same availability zones as the EC2 instance
+- To move a volume from one Availability Zone(AZ) to another, take a snapshot of it, create an AMI from the snapshot and then use the AMI to launch the EC2 instance in the new AZ
+- To move an EC2 volume from one region to another, take a snapshot of it, create an AMI from the snapshot and then copy the AMI from one region to the other. Then use the copied AMI to launch thge new EC2 instance in the new region.
